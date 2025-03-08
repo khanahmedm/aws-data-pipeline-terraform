@@ -28,14 +28,26 @@ resource "aws_glue_catalog_table" "financial_table" {
 
     columns {
       name = "transaction_id"
-      type = "string"
+      type = "int"
+    }
+    columns {
+      name = "customer_id"
+      type = "int"
+    }
+    columns {
+      name = "transaction_date"
+      type = "string" # Glue reads timestamps as string; can be converted later
     }
     columns {
       name = "amount"
       type = "double"
     }
     columns {
-      name = "transaction_date"
+      name = "currency"
+      type = "string"
+    }
+    columns {
+      name = "status"
       type = "string"
     }
   }
