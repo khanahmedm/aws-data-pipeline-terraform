@@ -38,3 +38,8 @@ terraform plan
 ```
 terraform apply
 ```
+
+#### Delete resources
+```
+terraform destroy
+```
