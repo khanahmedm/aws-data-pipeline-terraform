@@ -29,6 +29,11 @@ terraform init
 terraform validate
 ```
 
+#### Preview terraform changes
+```
+terraform plan
+```
+
 #### Apply terraform scripts
 ```
 terraform apply
